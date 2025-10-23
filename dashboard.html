@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Clínica Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Clínica Virtual</div>
+            <ul>
+                <li><a href="dashboard.html">Minhas Consultas</a></li>
+                <li><a href="agendar.html" class="btn btn-secondary">Agendar Consulta</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="profile-summary">
+            <h3>Olá, Usuário de Teste</h3>
+            <p><strong>Email:</strong> usuario@teste.com</p>
+            <p><strong>CPF:</strong> 123.456.789-00</p>
+        </div>
+
+        <hr style="margin: 2rem 0;">
+
+        <h2>Minhas Consultas</h2>
+
+        <div class="appointment-card">
+            <h4>Consulta - Clínica Geral</h4>
+            <p><strong>Médico:</strong> Dr. João Silva</p>
+            <p><strong>Data:</strong> 25 de Outubro de 2025 - 14:30</p>
+            <p><strong>Status:</strong> <span class="status-agendado">Agendado</span></p>
+            <form action="agendar.html" method="get" style="margin-top: 1rem;">
+                 <input type="hidden" name="id_consulta" value="123">
+                 <div class="form-group">
+                    <label for="motivo">Motivo do Cancelamento:</label>
+                    <input type="text" id="motivo" name="motivo" placeholder="Digite o motivo aqui...">
+                 </div>
+                 <button type="submit" class="btn btn-danger">Cancelar Consulta</button>
+            </form>
+        </div>
+
+        <div class="appointment-card">
+            <h4>Consulta - Dermatologia</h4>
+            <p><strong>Médico:</strong> Dra. Ana Souza</p>
+            <p><strong>Data:</strong> 20 de Outubro de 2025 - 10:00</p>
+            <p><strong>Status:</strong> <span class="status-cancelado">Cancelado</span></p>
+        </div>
+
+    </main>
+</body>
+</html>

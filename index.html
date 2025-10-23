@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Clínica Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Clínica Virtual</div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Login do Paciente</h2>
+        <form action="dashboard.html"> <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+        <p style="margin-top: 1rem;">
+            Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a>
+        </p>
+        <p style="margin-top: 1rem;">
+            É médico? <a href="medico-agenda.html">Acesse o portal do médico</a>
+        </p>
+    </main>
+</body>
+</html>

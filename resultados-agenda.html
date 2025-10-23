@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Clínica Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Clínica Virtual</div>
+            <ul>
+                <li><a href="dashboard.html">Minhas Consultas</a></li>
+                <li><a href="agendar.html" class="btn btn-secondary">Agendar Consulta</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Horários Disponíveis (Clínica Geral)</h2>
+        <p>Selecione um médico e um horário para sua consulta.</p>
+
+        <form action="dashboard.html"> <div class="doctor-schedule">
+                <h4>Dr. João Silva (Clínico Geral)</h4>
+                <div class="time-slots">
+                    <input type="radio" name="slot" id="slot1" value="joao-2510-1430">
+                    <label for="slot1">25/Out - 14:30</label>
+                    
+                    <input type="radio" name="slot" id="slot2" value="joao-2510-1500">
+                    <label for="slot2">25/Out - 15:00</label>
+
+                    <input type="radio" name="slot" id="slot3" value="joao-2610-0900">
+                    <label for="slot3">26/Out - 09:00</label>
+                </div>
+            </div>
+
+            <div class="doctor-schedule">
+                <h4>Dra. Maria Costa (Clínica Geral)</h4>
+                <div class="time-slots">
+                    <input type="radio" name="slot" id="slot4" value="maria-2510-1600">
+                    <label for="slot4">25/Out - 16:00</label>
+                    
+                    <input type="radio" name="slot" id="slot5" value="maria-2710-1000">
+                    <label for="slot5">27/Out - 10:00</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">
+                Confirmar Agendamento
+            </button>
+        </form>
+    </main>
+</body>
+</html>
